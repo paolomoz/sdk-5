@@ -1,0 +1,50 @@
+{
+  "variantName": "hero-products",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2025-11-05T09:58:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/products",
+    "originPage": "Products page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero-banner",
+    "imagePattern": "background",
+    "textLength": "short"
+  },
+  "contentPattern": {
+    "structure": "carousel background + heading with text slider + 2 CTAs",
+    "headingMaxLength": 50,
+    "descriptionMaxLength": 0,
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product landing pages",
+      "full-width hero sections with carousel backgrounds",
+      "hero sections with multiple CTAs"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "single CTA heroes",
+      "heroes with static images"
+    ],
+    "similarVariants": ["hero-feature"]
+  },
+  "designTokens": {
+    "primaryColor": "#ffffff",
+    "backgroundColor": "#000000",
+    "fontFamily": "system-ui",
+    "headingSize": "3rem",
+    "padding": "40px 24px"
+  },
+  "usage": {
+    "pagesUsing": ["/products"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-05T09:58:00.000Z"
+  }
+}

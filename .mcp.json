@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+      "figma-desktop": {
+        "type": "http",
+        "url": "http://host.docker.internal:3845/mcp",
+        "description": "Figma Desktop MCP Server for design extraction and migration",
+        "enabled": true
+      }
+    }
+}

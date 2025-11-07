@@ -229,13 +229,13 @@ button {
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
-  background-color: transparent;
-  color: var(--text-color);
+  background-color: var(--dark-color);
+  color: var(--text-color-inverse);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  box-shadow: var(--button-box-shadow);
+  box-shadow: none;
   transition: var(--button-transition);
 }
 
@@ -243,8 +243,8 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--button-background-hover);
-  box-shadow: var(--button-box-shadow-hover);
+  background-color: #333;
+  box-shadow: none;
   cursor: pointer;
 }
 

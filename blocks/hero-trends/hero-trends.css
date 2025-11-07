@@ -1,0 +1,146 @@
+/* Hero Trends Block */
+
+.hero-trends {
+  background-color: rgba(139, 254, 248, 0.5); /* Light cyan/turquoise background */
+  padding: 40px 24px;
+}
+
+.hero-trends-container {
+  max-width: 1248px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Content Column */
+.hero-trends-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Byline */
+.hero-trends-byline {
+  font-family: var(--body-font-family);
+  font-size: 14.4px;
+  line-height: 18.72px;
+  letter-spacing: 0.144px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+/* Headline */
+.hero-trends-headline {
+  font-family: var(--heading-font-family);
+  font-size: 60px;
+  line-height: 1.04;
+  letter-spacing: -0.904px;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: var(--heading-font-weight);
+}
+
+.hero-trends-headline-line {
+  display: block;
+}
+
+/* Description */
+.hero-trends-description {
+  font-family: var(--body-font-family);
+  font-size: 24px;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+  max-width: 575px;
+}
+
+/* CTA Text */
+.hero-trends-cta-text {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  max-width: 545px;
+}
+
+/* Button */
+.hero-trends-button-wrapper {
+  margin-top: 8px;
+}
+
+.hero-trends-button {
+  display: inline-block;
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  background-color: var(--dark-color);
+  color: var(--text-color-inverse);
+  text-decoration: none;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: 1.2;
+  box-shadow: 4px 4px 0px 0px rgba(244, 254, 139, 0.5);
+  border: 2px solid var(--dark-color);
+  transition: var(--button-transition);
+}
+
+.hero-trends-button:hover {
+  background-color: #333;
+  box-shadow: 7px 7px 0px 0px rgba(244, 254, 139, 0.5);
+}
+
+/* Image Column */
+.hero-trends-image {
+  width: 100%;
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+.hero-trends-image picture,
+.hero-trends-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 576 / 884;
+}
+
+/* Desktop Layout (2 columns) */
+@media (width >= 900px) {
+  .hero-trends {
+    padding: 64px 32px;
+  }
+
+  .hero-trends-container {
+    grid-template-columns: 1fr 576px;
+    gap: 64px;
+  }
+
+  .hero-trends-headline {
+    font-size: 90.4px;
+    line-height: 1.04;
+  }
+
+  .hero-trends-description {
+    font-size: 32px;
+  }
+
+  .hero-trends-image {
+    margin: 0;
+  }
+}
+
+/* Tablet adjustments */
+@media (width >= 600px) and (width < 900px) {
+  .hero-trends-headline {
+    font-size: 72px;
+  }
+
+  .hero-trends-description {
+    font-size: 28px;
+  }
+}

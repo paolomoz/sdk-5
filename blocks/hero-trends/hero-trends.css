@@ -1,0 +1,123 @@
+.hero-trends {
+  background-color: rgba(139, 254, 248, 0.5);
+  padding: 60px 24px;
+  min-height: 600px;
+}
+
+.hero-trends-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1248px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hero-trends-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-trends-byline {
+  font-family: var(--body-font-family);
+  font-size: 14.4px;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.144px;
+  line-height: 18.72px;
+}
+
+.hero-trends-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xxl);
+  font-weight: var(--heading-font-weight);
+  line-height: 1.04;
+  letter-spacing: var(--h1-letter-spacing);
+  color: var(--text-color);
+  margin: 0;
+}
+
+.hero-trends-heading p {
+  margin: 0;
+  line-height: 1.04;
+}
+
+.hero-trends-description {
+  font-family: var(--body-font-family);
+  font-size: 32px;
+  line-height: 1.6;
+  color: var(--text-color);
+  max-width: 575px;
+}
+
+.hero-trends-description p {
+  margin: 0;
+}
+
+.hero-trends-secondary {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 545px;
+}
+
+.hero-trends-secondary p {
+  margin: 0;
+}
+
+.hero-trends-cta {
+  margin-top: 12px;
+}
+
+.hero-trends-cta .button {
+  margin: 0;
+}
+
+.hero-trends-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 576 / 883;
+}
+
+.hero-trends-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Desktop layout */
+@media (width >= 900px) {
+  .hero-trends {
+    padding: 80px 32px;
+    min-height: 884px;
+  }
+
+  .hero-trends-container {
+    grid-template-columns: 1fr 576px;
+    gap: 96px;
+  }
+
+  .hero-trends-content {
+    padding-right: 40px;
+  }
+
+  .hero-trends-description {
+    font-size: 32px;
+  }
+}
+
+/* Tablet adjustments */
+@media (width >= 600px) and (width < 900px) {
+  .hero-trends-container {
+    gap: 48px;
+  }
+
+  .hero-trends-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

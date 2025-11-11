@@ -1,0 +1,113 @@
+.hero-trends {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  background-color: rgba(139, 254, 248, 0.5); /* Light cyan/turquoise accent */
+  padding: 80px 24px;
+  min-height: 600px;
+}
+
+.hero-trends-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+}
+
+.hero-trends-author {
+  font-family: var(--body-font-family);
+  font-size: 14.4px;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.144px;
+  line-height: 18.72px;
+}
+
+.hero-trends-heading {
+  font-family: var(--heading-font-family);
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.904px;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.hero-trends-description {
+  font-family: var(--body-font-family);
+  font-size: 32px;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.hero-trends-cta-text {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.hero-trends-button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.hero-trends-image {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.hero-trends-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Desktop layout - side by side */
+@media (width >= 900px) {
+  .hero-trends {
+    grid-template-columns: 1fr 576px;
+    gap: 96px;
+    padding: 80px 32px;
+    align-items: center;
+  }
+
+  .hero-trends-content {
+    padding-right: 0;
+  }
+
+  .hero-trends-heading {
+    font-size: 90.4px;
+    line-height: 94.02px;
+  }
+
+  .hero-trends-description {
+    font-size: 32px;
+    line-height: 51.2px;
+  }
+
+  .hero-trends-image {
+    margin-top: 0;
+    height: 100%;
+    min-height: 700px;
+  }
+
+  .hero-trends-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Tablet adjustments */
+@media (width >= 600px) and (width < 900px) {
+  .hero-trends-heading {
+    font-size: 60px;
+  }
+
+  .hero-trends-description {
+    font-size: 24px;
+  }
+}
